@@ -1,0 +1,103 @@
+/* Importing Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+/* Common CSS or Utilities Style Start */
+
+body {
+    font-family: 'STIX Two Math', serif;
+}
+
+.btn:focus, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+    color: white;
+}
+
+.bg-lavender {
+    background-color: #b0b0ef;
+    color: white;
+}
+
+.custom-font-size {
+    font-size: 19px;
+}
+
+.left-box {
+    box-shadow: inset 5px 0 8px -9px rgba(0, 0, 0, 0.301);
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.070);
+}
+
+#loader {
+    display: none;
+}
+
+/* Common CSS or Utilities Style End */
+
+
+/* Info Display CSS Start */
+
+.info-display {
+    background-color: #b0b0ef;
+    position: sticky;
+    height: 625px;
+}
+
+/* Info Display CSS End */
+
+
+/* Menu Display CSS Start */
+
+.menu-display {
+    background-color: #c6c6f3de;
+}
+
+.form-control {
+    font-size: 17.5px;
+}
+
+/* Menu Display CSS End */
+
+
+/* Loader Style Start */
+
+.loader {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    align-items: center;
+}
+
+.loader>div {
+    width: 12px;
+    height: 12px;
+    background: darkslateblue;
+    border-radius: 50%;
+    margin: 3px;
+    animation: loader 0.6s infinite alternate;
+}
+
+.loader>div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader>div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loader {
+    to {
+        opacity: 0.1;
+        transform: translate(0, -20px);
+        background: lavender;
+    }
+}
+
+/* Loader Style End */

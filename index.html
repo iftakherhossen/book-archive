@@ -5,19 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Book Archive - Home</title>
 </head>
 
 <body>
 
-    
+    <main class="overflow-hidden">
+        <section class="row g-0">
+            <!-- Info Display Side -->
+            <div class="col-12 col-lg-5 info-display">
+                <div class="p-4">
+                    <!-- Heading -->
+                    <div class="text-center my-1">
+                        <h1>Welcome to <span class="text-white">Book Archive</span></h1>
+                        <hr>
+                        <div id="info-display" class="py-3"></div>
+                    </div>
+
+                    <!-- Info Display -->
+
+                </div>
+            </div>
+
+            <!-- Menu & Search Bar Side -->
+            <div class="col-12 col-lg-7 menu-display left-box">
+                <div class="p-4">
+                    <!-- Search Engine -->
+                    <div class="input-group mt-2 mb-3 box-shadow w-75 mx-auto">
+                        <input id="search-field" type="search" class="form-control" placeholder="Search by Book Name" aria-label="Search by Book Name" aria-describedby="button-addon2">
+                        <button id="search-btn" class="btn bg-lavender custom-font-size" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <!-- Loader -->
+                    <div id="loader" class="loader pt-2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <!-- Display Search Result -->
+                    <div id="display-result" class="mx-auto my-5">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card box-shadow">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Special title treatment</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn bg-lavender fw-bold text-dark">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
 
     <!-- Script Link -->
     <script src="script.js"></script>
+    <!-- Bootstrap JS Bundle Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/f7d5949a35.js" crossorigin="anonymous"></script>
 
 </body>
 
