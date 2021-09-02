@@ -8,19 +8,28 @@ const toggleSearchResult = displayStyle => {
     document.getElementById('display-result').style.display = displayStyle;
 };
 
-// Counter Function
+// Toggle Counter
 const toggleCounter = displayStyle => {
     document.getElementById('counter').style.display = displayStyle;
 }
 toggleCounter('none');
 
-// Search Input Function
+// Toggle Footer
+const toggleFooter = displayStyle => {
+    document.getElementById('footer').style.display = displayStyle;
+}
+toggleFooter('none');
+
+
+// Search Input Function & API Calling
 const getSearchInput = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     searchField.value = '';
     toggleLoader('flex');
     toggleSearchResult('none');
+    toggleCounter('none');
+    toggleFooter('none')
     const url = `https://openlibrary.org/search.json?q=${searchText}`;
 
     if (searchText == '') {
@@ -50,20 +59,18 @@ const displaySearchResult = docs => {
     const displayResult = document.getElementById('display-result');
     displayResult.textContent = '';
     const counterNum = document.getElementById('counter-number');
-    let i = 0;
 
     if (docs == null || docs.length == 0) {
         alert('No result found!');
         return;
     }
-    
+
     toggleCounter('block');
     docs.forEach(doc => {
-        i++;
         const div = document.createElement('div');
         div.classList.add('col');
         div.innerHTML = `
-            <div class="card box-shadow">
+            <div class="card box-shadow h-100">
                 <img src="https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg" class="card-img-top height" alt="Book Cover Image">
                 <div class="card-body">
                     <h4 class="card-title">${doc.title}</h4>
@@ -78,7 +85,12 @@ const displaySearchResult = docs => {
         displayResult.appendChild(div);
         toggleLoader('none');
         toggleSearchResult('flex');
+        toggleFooter('block')
     });
 
-    counterNum.innerText = i;
+    // For Counting Array Length
+    counterNum.innerText = docs.length;
+    if (docs.length <= 20) {
+        toggleFooter('none');
+    }
 };

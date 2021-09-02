@@ -13,6 +13,10 @@ body {
     box-shadow: none;
 }
 
+.form-control:focus {
+    border-color: #aaaaf3;
+}
+
 hr {
     width: 75%;
     margin: auto;
@@ -38,6 +42,11 @@ hr {
 
 .height {
     height: 250px !important;
+}
+
+.page-link {
+    background-color: #aaaaf3;
+    color: white;
 }
 
 /* Common CSS or Utilities Style End */
