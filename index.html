@@ -16,66 +16,31 @@
 <body>
 
     <main class="overflow-hidden">
-        <section class="row g-0">
-            <!-- Info Display Side -->
-            <div class="col-12 col-lg-5 info-display">
-                <div class="p-4">
-                    <!-- Heading -->
-                    <div class="text-center my-1">
-                        <h1>Welcome to <span class="text-white">Book Archive</span></h1>
-                        <hr>
-
-                    </div>
-
-                    <!-- Info Display -->
-                    <div id="info-display" class="py-3">
-                        <div class="card box-shadow">
-                            <img src="" class="card-img-top" alt="Book Cover Image">
-                            <div class="card-body">
-                                <h1 class="mb-0">Book Name</h1>
-                                <h4 class="mt-0">Author Name</h4>
-                                <p class="card-text mt-3 mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="d-flex justify-content-between">
-                                    <h5>Publisher Name</h5>
-                                    <h5>First Publishing Date</h5>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <h5>Genre</h5>
-                                    <h5>Language: </h5>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Menu & Search Bar Side -->
+        <section class="p-4">
+            <!-- Search Engine -->
+            <div class="input-group my-3 box-shadow w-50 mx-auto">
+                <input id="search-field" type="search" class="form-control" placeholder="Search by Book Name"
+                    aria-label="Search by Book Name" aria-describedby="button-addon2">
+                <button id="search-btn" class="btn bg-lavender ccss-font-size" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
 
-            <!-- Menu & Search Bar Side -->
-            <div class="col-12 col-lg-7 menu-display left-box">
-                <div class="p-4">
-                    <!-- Search Engine -->
-                    <div class="input-group mt-2 mb-3 box-shadow w-75 mx-auto">
-                        <input id="search-field" type="search" class="form-control" placeholder="Search by Book Name"
-                            aria-label="Search by Book Name" aria-describedby="button-addon2">
-                        <button id="search-btn" class="btn bg-lavender custom-font-size" type="button"><i
-                                class="fas fa-search"></i></button>
-                    </div>
-
-                    <!-- Loader -->
-                    <div id="loader" class="loader pt-2">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-
-                    <!-- Display Search Result -->
-                    <div id="display-result" class="mx-auto my-5">
-                        <div class="row">
-
-                        </div>
-                    </div>
-                </div>
+            <!-- Loader -->
+            <div id="loader" class="loader pt-2">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+
+            <!-- Total Result -->
+            <div id="counter" class="text-center text-dark">
+                <p class="fs-5">Result Found <span id="counter-number"></span></p>
+            </div>
+
+            <!-- Display Search Result -->
+            <div id="display-result" class="row row-cols-1 row-cols-md-3 g-4 container mx-auto my-3"></div>
         </section>
     </main>
 

@@ -5,6 +5,7 @@
 
 body {
     font-family: 'STIX Two Math', serif;
+    background-color: #c6c6f3de;
 }
 
 .btn:focus, .form-control:focus {
@@ -23,12 +24,8 @@ hr {
     color: white;
 }
 
-.custom-font-size {
+.ccss-font-size {
     font-size: 19px;
-}
-
-.left-box {
-    box-shadow: inset 7px 0 7px -9px rgba(0, 0, 0, 0.329);
 }
 
 .box-shadow {
@@ -39,23 +36,13 @@ hr {
     display: none;
 }
 
+.height {
+    height: 250px !important;
+}
+
 /* Common CSS or Utilities Style End */
 
-/* Info Display CSS Start */
-
-.info-display {
-    background-color: #aaaaf3;
-    position: sticky;
-    height: 625px;
-}
-
-/* Info Display CSS End */
-
 /* Menu Display CSS Start */
-
-.menu-display {
-    background-color: #c6c6f3de;
-}
 
 .form-control {
     font-size: 17.5px;
