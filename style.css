@@ -19,7 +19,7 @@ hr {
 }
 
 .bg-lavender {
-    background-color: #b0b0ef;
+    background-color: #aaaaf3;
     color: white;
 }
 
@@ -28,7 +28,7 @@ hr {
 }
 
 .left-box {
-    box-shadow: inset 5px 0 8px -9px rgba(0, 0, 0, 0.301);
+    box-shadow: inset 7px 0 7px -9px rgba(0, 0, 0, 0.329);
 }
 
 .box-shadow {
@@ -41,17 +41,15 @@ hr {
 
 /* Common CSS or Utilities Style End */
 
-
 /* Info Display CSS Start */
 
 .info-display {
-    background-color: #b0b0ef;
+    background-color: #aaaaf3;
     position: sticky;
     height: 625px;
 }
 
 /* Info Display CSS End */
-
 
 /* Menu Display CSS Start */
 
@@ -64,7 +62,6 @@ hr {
 }
 
 /* Menu Display CSS End */
-
 
 /* Loader Style Start */
 
