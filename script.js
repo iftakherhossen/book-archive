@@ -11,13 +11,13 @@ const toggleSearchResult = displayStyle => {
 // Toggle Counter
 const toggleCounter = displayStyle => {
     document.getElementById('counter').style.display = displayStyle;
-}
+};
 toggleCounter('none');
 
 // Toggle Footer
 const toggleFooter = displayStyle => {
     document.getElementById('footer').style.display = displayStyle;
-}
+};
 toggleFooter('none');
 
 
@@ -34,6 +34,7 @@ const getSearchInput = () => {
 
     if (searchText == '') {
         alert('Type Something!');
+        toggleLoader('none');
     }
     else {
         fetch(url)
